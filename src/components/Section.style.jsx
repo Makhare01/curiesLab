@@ -84,10 +84,10 @@ export const FirstSectionImgDivStyle = styled.div`
 
 export const FirstSectionImgStyle = styled.img`
   width: 100%;
-  max-width: 700px;
+  max-width: 550px;
   left: 0px;
   top: 60px;
-  /* border: solid 1px red; */
+  border: solid 1px red;
 
   @media screen and (max-width: 800px) {
     height: 100%;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const MainPageContentDivStyle = styled.div`
   position: absolute;
   width: 90%;
+  max-width: 1920px;
   height: calc(100vh - 300px);
   height: calc(100% - 200px);
   /* border: solid 1px red; */

@@ -87,7 +87,7 @@ export const FirstSectionImgStyle = styled.img`
   max-width: 550px;
   left: 0px;
   top: 60px;
-  border: solid 1px red;
+  /* border: solid 1px red; */
 
   @media screen and (max-width: 800px) {
     height: 100%;
@@ -222,7 +222,7 @@ export const ThirdSectionTextDivStyle = styled.div`
   height: 100%;
   width: 50%;
   position: absolute;
-  /* border: solid 1px green; */
+  border: solid 1px green;
   left: 0px;
   display: flex;
   align-items: center;
@@ -341,10 +341,10 @@ export const ThirdSectionImgDivStyle = styled.div`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 800px), screen and (max-height: 812px) {
     height: 40% !important;
     width: 100% !important;
-    /* border: solid 1px black; */
+    border: solid 1px black;
     top: 0%;
     align-items: center;
     justify-content: center;
@@ -357,7 +357,7 @@ export const ThirdSectionImgStyle = styled.img`
   /* border: solid 1px purple; */
   left: 0px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 800px), screen and (max-height: 812px) {
     height: 100%;
     width: auto;
     top: 0px;
@@ -429,7 +429,7 @@ export const FourthSectionButtonStyle = styled.button`
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  padding-top: 5px;
+  padding-top: 8px;
   margin-top: 40px;
   cursor: pointer;
   transition: 0.3s;
@@ -466,7 +466,7 @@ export const FourthSectionImgDivStyle = styled.div`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 800px), screen and (max-height: 812px) {
     height: 90% !important;
     width: 100% !important;
     /* border: solid 1px black; */

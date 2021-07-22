@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContactNavbarDivStyle = styled.div`
   width: 90%;
-  max-width: 1920px;
+  /* max-width: 1920px; */
   height: 60px;
   position: sticky;
   left: 0;

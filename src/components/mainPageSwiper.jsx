@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import ContactNavbar from "./ContactNavbar";
 import { MainPageContentDivStyle } from "./MainPageContentDiv.style";
 import ReactFullpage from "@fullpage/react-fullpage";
+import { NavLink } from "react-router-dom";
 import {
   FirstSectionTextDivStyle,
   FirstSectionTextAnimationDivStyle,
@@ -164,11 +165,13 @@ class MainPageSwiper extends Component {
                           განვითარებაში
                         </FourthSectionTextStyle> */}
 
-                        <FourthSectionButtonStyle>
-                          <FourthSectionButtonLabelStyle>
-                            ყველა სიახლე
-                          </FourthSectionButtonLabelStyle>
-                        </FourthSectionButtonStyle>
+                        <NavLink style={{ textDecoration: "none" }} to="/news">
+                          <FourthSectionButtonStyle>
+                            <FourthSectionButtonLabelStyle>
+                              ყველა სიახლე
+                            </FourthSectionButtonLabelStyle>
+                          </FourthSectionButtonStyle>
+                        </NavLink>
                       </FourthSectionTextAnimationDivStyle>
                     </FourthSectionTextDivStyle>
 

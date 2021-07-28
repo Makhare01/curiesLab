@@ -11,13 +11,29 @@ export const FirstSectionTextDivStyle = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: 800px) {
+  /* Ipad Pro */
+  @media screen and (max-width: 1024px) {
     top: 50%;
     height: 50% !important;
     width: 100% !important;
   }
 
-  @media screen and (max-width: 400px) {
+  /* Mobile Rotate */
+  @media (max-width: 830px) and (max-height: 420px) {
+    top: 0%;
+    height: 100% !important;
+    width: 50% !important;
+  }
+
+  /* Mobile */
+  @media (max-width: 830px) and (min-height: 420px) {
+    top: 50%;
+    height: 50% !important;
+    width: 100% !important;
+  }
+
+  /* Iphone X */
+  @media screen and (max-width: 565px) {
     top: 40%;
     height: 70% !important;
     width: 100% !important;
@@ -32,7 +48,11 @@ export const FirstSectionTextAnimationDivStyle = styled.div`
   /* border: solid 1px purple; */
   position: absolute;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (min-width: 1025px) {
+    right: 0px;
+  }
+
+  @media screen and (max-width: 1024px) {
     width: 100%;
     /* border: solid 1px red; */
     text-align: center;
@@ -49,13 +69,22 @@ export const FirstSectionTextStyle = styled.p`
   left: 10%;
   top: 70%;
 
-  @media screen and (max-width: 800px) {
+  @media (max-width: 830px) and (max-height: 420px) {
     font-size: 12px;
     left: 0%;
     text-align: center;
     /* border: solid 1px red; */
     width: 100%;
-    top: 90%;
+    top: 80%;
+  }
+
+  @media (max-width: 830px) and (min-height: 420px) {
+    font-size: 12px;
+    left: 0%;
+    text-align: center;
+    /* border: solid 1px red; */
+    width: 100%;
+    top: 70%;
   }
 `;
 
@@ -66,20 +95,39 @@ export const FirstSectionImgDivStyle = styled.div`
   right: 0px;
   display: flex;
   align-items: center;
+  /* border: solid 1px red; */
 
-  @media screen and (max-width: 800px) {
+  /* Ipad Pro */
+  @media screen and (max-width: 1024px) {
     height: 50% !important;
     width: 100% !important;
     top: 0%;
     justify-content: center;
   }
 
-  /* @media screen and (max-width: 400px) {
-    height: 40% !important;
+  /* Mobile Rotate */
+  @media (max-width: 830px) and (max-height: 420px) {
+    height: 100% !important;
+    width: 50% !important;
+    /* top: 0%; */
+    justify-content: center;
+  }
+
+  /* Mobile */
+  @media (max-width: 830px) and (min-height: 420px) {
+    height: 50% !important;
     width: 100% !important;
     top: 0%;
     justify-content: center;
-  } */
+  }
+
+  /* Iphone X */
+  @media screen and (max-width: 376px) {
+    height: 50% !important;
+    width: 100% !important;
+    /* top: 0%; */
+    justify-content: center;
+  }
 `;
 
 export const FirstSectionImgStyle = styled.img`
@@ -87,12 +135,18 @@ export const FirstSectionImgStyle = styled.img`
   max-width: 550px;
   left: 0px;
   top: 60px;
-  /* border: solid 1px red; */
+  /* border: solid 1px purple; */
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1024px) {
     height: 100%;
     width: auto;
     top: 0px;
+  }
+
+  @media screen and (max-height: 750px) {
+    height: 100%;
+    width: auto;
+    /* top: 0px; */
   }
 `;
 
@@ -108,8 +162,30 @@ export const SecondSectionTextDivStyle = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: 800px) {
+  /* Ipad Pro */
+  @media screen and (max-width: 1024px) {
     top: 50%;
+    height: 50% !important;
+    width: 100% !important;
+  }
+
+  /* Mobile Rotate */
+  @media (max-width: 830px) and (max-height: 420px) {
+    top: 0%;
+    height: 100% !important;
+    width: 50% !important;
+  }
+
+  /* Mobile */
+  @media (max-width: 830px) and (min-height: 420px) {
+    top: 50%;
+    height: 50% !important;
+    width: 100% !important;
+  }
+
+  /* Iphone X */
+  @media screen and (max-width: 565px) {
+    top: 40%;
     height: 70% !important;
     width: 100% !important;
   }
@@ -120,6 +196,20 @@ export const SecondSectionTextAnimationDivStyle = styled.div`
   max-width: 500px;
   height: auto;
   position: absolute;
+
+  @media screen and (min-width: 1400px) {
+    right: 80px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    right: 0px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
 `;
 
 export const SecondSectionTitleStyle = styled.p`
@@ -129,13 +219,20 @@ export const SecondSectionTitleStyle = styled.p`
   border-bottom: solid 5px #c2d7e2;
   margin: 0px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1024px) {
     display: block;
     font-size: 30px;
     width: 70%;
     text-align: center;
     margin: auto;
     margin-top: 30px;
+  }
+
+  @media (max-width: 600px) and (min-width: 550px) {
+    display: block;
+    font-size: 22px;
+    width: 70%;
+    /* margin-top: 30px; */
   }
 `;
 
@@ -145,9 +242,27 @@ export const SecondSectionTextStyle = styled.p`
   color: #55636e;
   margin-top: 60px;
 
-  @media screen and (max-width: 800px) {
+  /* @media screen and (max-width: 800px) {
     margin-top: 20px;
     text-align: center;
+  } */
+
+  @media (max-width: 1024px) {
+    font-size: 12px;
+    left: 0%;
+    text-align: center;
+    /* border: solid 1px red; */
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 600px) and (min-width: 550px) {
+    font-size: 10px;
+    left: 0%;
+    text-align: center;
+    /* border: solid 1px red; */
+    width: 100%;
+    margin-top: 10px;
   }
 `;
 
@@ -167,10 +282,16 @@ export const SecondSectionButtonStyle = styled.button`
     background: #f33e00;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1024px) {
     display: block !important;
     margin: auto !important;
     margin-top: 40px !important;
+  }
+
+  @media (max-width: 600px) and (min-width: 550px) {
+    margin-top: 10px !important;
+    width: 200px;
+    height: 45px;
   }
 `;
 
@@ -181,8 +302,11 @@ export const SecondSectionButtonLabelStyle = styled.label`
   font-size: 18px;
   text-align: center;
   cursor: pointer;
-
   color: #ffffff;
+
+  @media (max-width: 600px) and (min-width: 550px) {
+    font-size: 14px;
+  }
 `;
 
 export const SecondSectionImgDivStyle = styled.div`
@@ -192,12 +316,48 @@ export const SecondSectionImgDivStyle = styled.div`
   right: 0px;
   display: flex;
   align-items: center;
+  /* border: solid 1px green; */
 
-  @media screen and (max-width: 800px) {
+  /* @media screen and (max-width: 800px) {
     height: 50% !important;
     width: 100% !important;
-    /* border: solid 1px black; */
+    border: solid 1px black;
     top: 0%;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  /* Ipad Pro */
+  @media screen and (max-width: 1024px) {
+    height: 50% !important;
+    width: 100% !important;
+    top: 0%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Mobile Rotate */
+  @media (max-width: 830px) and (max-height: 420px) {
+    height: 100% !important;
+    width: 50% !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Mobile */
+  @media (max-width: 830px) and (min-height: 420px) {
+    height: 50% !important;
+    width: 100% !important;
+    top: 0%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Iphone X */
+  @media screen and (max-width: 376px) {
+    height: 50% !important;
+    width: 100% !important;
+    /* top: 0%; */
     align-items: center;
     justify-content: center;
   }
@@ -209,44 +369,56 @@ export const SecondSectionImgStyle = styled.img`
   left: 0px;
   /* border: solid 1px red; */
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1024px) {
+    height: 100%;
+    width: auto;
+  }
+
+  @media (max-height: 600px) and (min-height: 450px) {
     height: 100%;
     width: auto;
     margin-top: -50px;
   }
 `;
 
-// Thirs Section
+// Thirs Section --------------------------------------------------------------------------------------------------
 
 export const ThirdSectionTextDivStyle = styled.div`
   height: 100%;
   width: 50%;
   position: absolute;
-  border: solid 1px green;
+  /* border: solid 1px green; */
   left: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  /* @media screen and (max-width: 800px) {
-    top: 40%;
-    height: 70% !important;
-    width: 100% !important;
-  } */
-
-  @media screen and (max-width: 800px), screen and (max-height: 812px) {
+  /* Ipad Pro */
+  @media screen and (max-width: 1024px) {
     top: 50%;
     height: 50% !important;
     width: 100% !important;
-
-    /* border: solid 1px red; */
   }
 
-  @media screen and (max-height: 568px) {
-    top: 40%;
+  /* Mobile Rotate */
+  @media (max-width: 830px) and (max-height: 420px) {
+    top: 0%;
+    height: 100% !important;
+    width: 50% !important;
+  }
+
+  /* Mobile */
+  @media (max-width: 830px) and (min-height: 420px) {
+    top: 50%;
     height: 50% !important;
     width: 100% !important;
-    /* border: solid 1px green; */
+  }
+
+  /* Iphone X */
+  @media screen and (max-width: 565px) {
+    top: 40%;
+    height: 70% !important;
+    width: 100% !important;
   }
 `;
 
@@ -255,6 +427,20 @@ export const ThirdSectionTextAnimationDivStyle = styled.div`
   max-width: 500px;
   height: auto;
   position: absolute;
+
+  @media screen and (min-width: 1400px) {
+    right: 80px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    right: 0px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
 `;
 
 export const ThirdSectionTitleStyle = styled.label`
@@ -264,12 +450,28 @@ export const ThirdSectionTitleStyle = styled.label`
   border-bottom: solid 5px #c2d7e2;
   margin: 0px;
 
-  @media screen and (max-width: 800px) {
+  /* @media screen and (max-width: 800px), screen and (max-height: 812px) {
     display: block;
     font-size: 30px;
     width: 70%;
     text-align: center;
     margin: auto;
+    margin-top: 30px;
+  } */
+
+  @media screen and (max-width: 1024px) {
+    display: block;
+    font-size: 30px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 600px) and (min-width: 550px) {
+    display: block;
+    font-size: 22px;
+    width: 70%;
     margin-top: 30px;
   }
 `;
@@ -280,8 +482,22 @@ export const ThirdSectionTextStyle = styled.p`
   color: #55636e;
   margin-top: 60px;
 
-  @media screen and (max-width: 800px) {
+  @media (max-width: 1024px) {
+    font-size: 12px;
+    left: 0%;
     text-align: center;
+    /* border: solid 1px red; */
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 600px) and (min-width: 550px) {
+    font-size: 10px;
+    left: 0%;
+    text-align: center;
+    /* border: solid 1px red; */
+    width: 100%;
+    margin-top: 30px;
   }
 `;
 
@@ -301,22 +517,17 @@ export const ThirdSectionButtonStyle = styled.button`
     background: #f33e00;
   }
 
-  /* @media screen and (max-width: 800px) {
-    display: block !important;
-    margin: auto !important;
-    margin-top: 40px !important;
-  } */
-
-  @media screen and (max-width: 800px), screen and (max-height: 812px) {
+  @media screen and (max-width: 1024px) {
     display: block !important;
     margin: auto !important;
     margin-top: 100px !important;
   }
 
-  @media screen and (max-height: 568px) {
-    display: block !important;
-    margin: auto !important;
-    margin-top: 40px !important;
+  @media (max-width: 600px) and (min-width: 550px) {
+    margin-top: 10px !important;
+    width: 200px;
+    height: 45px;
+    margin-top: 30px !important;
   }
 `;
 
@@ -328,8 +539,11 @@ export const ThirdSectionButtonLabelStyle = styled.label`
   /* line-height: 29px; */
   text-align: center;
   cursor: pointer;
-
   color: #ffffff;
+
+  @media (max-width: 600px) and (min-width: 550px) {
+    font-size: 14px;
+  }
 `;
 
 export const ThirdSectionImgDivStyle = styled.div`
@@ -341,11 +555,37 @@ export const ThirdSectionImgDivStyle = styled.div`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 800px), screen and (max-height: 812px) {
-    height: 40% !important;
+  /* Ipad Pro */
+  @media screen and (max-width: 1024px) {
+    height: 50% !important;
     width: 100% !important;
-    border: solid 1px black;
     top: 0%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Mobile Rotate */
+  @media (max-width: 830px) and (max-height: 420px) {
+    height: 100% !important;
+    width: 50% !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Mobile */
+  @media (max-width: 830px) and (min-height: 420px) {
+    height: 50% !important;
+    width: 100% !important;
+    top: 0%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Iphone X */
+  @media screen and (max-width: 376px) {
+    height: 50% !important;
+    width: 100% !important;
+    /* top: 0%; */
     align-items: center;
     justify-content: center;
   }
@@ -357,37 +597,63 @@ export const ThirdSectionImgStyle = styled.img`
   /* border: solid 1px purple; */
   left: 0px;
 
-  @media screen and (max-width: 800px), screen and (max-height: 812px) {
+  @media screen and (max-width: 1024px) {
     height: 100%;
     width: auto;
     top: 0px;
   }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
-// Fourth Section -------------------------------------------------------------------------------------------------
+// Fourth Section --------------------------------------------------------------------------------------------------
 
 export const FourthSectionTextDivStyle = styled.div`
   height: 100%;
   width: 50%;
   position: absolute;
-  /* border: solid 1px green; */
+  /* border: solid 1px purple; */
   left: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: 800px), screen and (max-height: 812px) {
-    top: 100%;
-    height: 20% !important;
+  /* Ipad Pro */
+  @media screen and (max-width: 1024px) {
+    top: 50%;
+    height: 50% !important;
     width: 100% !important;
-    /* border: solid 1px green; */
   }
 
-  @media screen and (max-height: 568px) {
-    top: 110%;
-    height: 20% !important;
+  /* Mobile Rotate */
+  @media (max-width: 830px) and (max-height: 420px) {
+    top: 0%;
+    height: 100% !important;
+    width: 50% !important;
+  }
+
+  /* Mobile */
+  @media (max-width: 830px) and (min-height: 420px) {
+    top: 50%;
+    height: 50% !important;
     width: 100% !important;
-    /* border: solid 1px red; */
+  }
+
+  /* Iphone X */
+  @media screen and (max-width: 565px) {
+    top: 50%;
+    height: 50% !important;
+    width: 100% !important;
+  }
+
+  /* Iphone X */
+  @media screen and (max-width: 320px) {
+    top: 70%;
+    height: 30% !important;
+    width: 100% !important;
   }
 `;
 
@@ -466,11 +732,46 @@ export const FourthSectionImgDivStyle = styled.div`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 800px), screen and (max-height: 812px) {
+  /* @media screen and (max-width: 800px), screen and (max-height: 812px) {
     height: 90% !important;
     width: 100% !important;
-    /* border: solid 1px black; */
+    border: solid 1px black;
     top: 0%;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  /* Ipad Pro */
+  @media screen and (max-width: 1024px) {
+    height: 50% !important;
+    width: 100% !important;
+    top: 0%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Mobile Rotate */
+  @media (max-width: 830px) and (max-height: 420px) {
+    height: 100% !important;
+    width: 50% !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Mobile */
+  @media (max-width: 830px) and (min-height: 420px) {
+    height: 50% !important;
+    width: 100% !important;
+    top: 0%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Iphone X */
+  @media screen and (max-width: 376px) {
+    height: 50% !important;
+    width: 100% !important;
+    /* top: 0%; */
     align-items: center;
     justify-content: center;
   }

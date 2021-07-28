@@ -16,7 +16,7 @@ export const ContactNavbarDivStyle = styled.div`
   /* align-items: center; */
   justify-content: space-between;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 830px) {
     display: none;
   }
 `;

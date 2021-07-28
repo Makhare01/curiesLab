@@ -15,7 +15,7 @@ export const NavbarStyle = styled.div`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 830px) {
     /* display: none; */
     top: 10px;
     justify-content: space-between;
@@ -40,7 +40,7 @@ export const NavLinkDivStyle = styled.div`
   /* border: solid 1px green; */
   margin: auto;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 830px) {
     display: none;
   }
 `;
@@ -60,7 +60,7 @@ export const NavbarContactStyle = styled.button`
     background-color: #f33e00;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 830px) {
     display: none;
   }
 `;
@@ -89,7 +89,7 @@ export const NavbarContactLabelStyle = styled.label`
   cursor: pointer;
   color: white;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 830px) {
     color: #f33e00;
   }
 `;
@@ -114,10 +114,16 @@ export const NavbarNavlinkLiStyle = styled.li`
   text-align: center;
   text-decoration: none;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 830px) {
     width: 100%;
     font-size: 24px;
     margin: 50px 0px 50px 0px;
+  }
+
+  @media (max-width: 600px) and (min-width: 560px) {
+    width: 100%;
+    font-size: 24px;
+    margin: 25px 0px 25px 0px;
   }
 `;
 
@@ -127,7 +133,7 @@ export const NavbarResponsiveBurgerStyle = styled.i`
   color: white;
   cursor: pointer;
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 830px) {
     display: none;
   }
 `;

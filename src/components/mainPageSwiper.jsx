@@ -100,12 +100,13 @@ class MainPageSwiper extends Component {
                           ყველა საჭირო ინვერტარსა და მასალას ექსპერიმენტის
                           ჩასატარებლად
                         </SecondSectionTextStyle>
-
-                        <SecondSectionButtonStyle>
-                          <SecondSectionButtonLabelStyle>
-                            სამეცნიერო ყუთები
-                          </SecondSectionButtonLabelStyle>
-                        </SecondSectionButtonStyle>
+                        <NavLink style={{ textDecoration: "none" }} to="/boxes">
+                          <SecondSectionButtonStyle>
+                            <SecondSectionButtonLabelStyle>
+                              სამეცნიერო ყუთები
+                            </SecondSectionButtonLabelStyle>
+                          </SecondSectionButtonStyle>
+                        </NavLink>
                       </SecondSectionTextAnimationDivStyle>
                     </SecondSectionTextDivStyle>
 

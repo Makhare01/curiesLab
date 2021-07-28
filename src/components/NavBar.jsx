@@ -15,13 +15,22 @@ import {
 import logo from "../img/clip-402.png";
 
 const NavBar = () => {
-  // const handelMenu = () => {
-  //   console.log("work");
-  // };
+  const handelMenu = () => {
+    const dots = document.getElementById("fp-nav");
+
+    const check = document.getElementById("active");
+
+    if (dots) {
+      if (check.checked === true) dots.style.display = "block";
+      else dots.style.display = "none";
+    }
+  };
   return (
     <NavbarStyle>
       <NavbarLogoDivStyle>
-        <NavbarLogoStyle src={logo} />
+        <NavLink className="navbar-navlink" to="/">
+          <NavbarLogoStyle src={logo} />
+        </NavLink>
       </NavbarLogoDivStyle>
       <NavLinkDivStyle>
         <NavbarNavlinkUlStyle>
@@ -50,7 +59,7 @@ const NavBar = () => {
       <label for="active" className="menu-btn">
         {/* <i className="fas fa-bars"></i> */}
         <NavbarResponsiveBurgerStyle
-          // onClick={handelMenu}
+          onClick={handelMenu}
           className="fa fa-bars"
         ></NavbarResponsiveBurgerStyle>
       </label>

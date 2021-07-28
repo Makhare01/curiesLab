@@ -3,10 +3,10 @@ import {
   ContactNavbarDivStyle,
   ContactNavbarIconsDivStyle,
   ContactNavbarIconStyle,
-  ContactNavbarIconMesssageStyle,
+  // ContactNavbarIconMesssageStyle,
 } from "./ContactNavbar.style";
 
-import chatIcon from "../img/chat_message_icon.png";
+// import chatIcon from "../img/chat_message_icon.png";
 
 const ContactNavbar = () => {
   return (
@@ -25,9 +25,9 @@ const ContactNavbar = () => {
         ></ContactNavbarIconStyle>
       </ContactNavbarIconsDivStyle>
 
-      <ContactNavbarIconsDivStyle>
+      {/* <ContactNavbarIconsDivStyle>
         <ContactNavbarIconMesssageStyle src={chatIcon} />
-      </ContactNavbarIconsDivStyle>
+      </ContactNavbarIconsDivStyle> */}
     </ContactNavbarDivStyle>
   );
 };

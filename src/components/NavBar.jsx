@@ -14,15 +14,28 @@ import {
 } from "./NavBar.style";
 import logo from "../img/clip-402.png";
 
-const NavBar = () => {
+const NavBar = (props) => {
   const handelMenu = () => {
     const dots = document.getElementById("fp-nav");
 
     const check = document.getElementById("active");
+    const select = document.getElementById("app-cover");
+    console.log(select);
 
     if (dots) {
-      if (check.checked === true) dots.style.display = "block";
-      else dots.style.display = "none";
+      if (check.checked === true) {
+        dots.style.display = "block";
+      } else {
+        dots.style.display = "none";
+      }
+    }
+
+    if (select) {
+      if (check.checked === true) {
+        select.style.display = "block";
+      } else {
+        select.style.display = "none";
+      }
     }
   };
   return (
@@ -35,17 +48,38 @@ const NavBar = () => {
       <NavLinkDivStyle>
         <NavbarNavlinkUlStyle>
           <NavbarNavlinkLiStyle>
-            <NavLink className="navbar-navlink" to="/boxes">
+            <NavLink
+              className={
+                props.index === 1
+                  ? "navbar-navlink navbar-active"
+                  : "navbar-navlink"
+              }
+              to="/boxes"
+            >
               სამეცნიერო ყუთები
             </NavLink>
           </NavbarNavlinkLiStyle>
           <NavbarNavlinkLiStyle>
-            <NavLink className="navbar-navlink" to="/about-us">
+            <NavLink
+              className={
+                props.index === 2
+                  ? "navbar-navlink navbar-active"
+                  : "navbar-navlink"
+              }
+              to="/about-us"
+            >
               ჩვენს შესახებ
             </NavLink>
           </NavbarNavlinkLiStyle>
           <NavbarNavlinkLiStyle>
-            <NavLink className="navbar-navlink" to="/team">
+            <NavLink
+              className={
+                props.index === 3
+                  ? "navbar-navlink navbar-active"
+                  : "navbar-navlink"
+              }
+              to="/team"
+            >
               გუნდი
             </NavLink>
           </NavbarNavlinkLiStyle>
@@ -56,7 +90,7 @@ const NavBar = () => {
       </NavbarContactStyle>
 
       <input type="checkbox" id="active"></input>
-      <label for="active" className="menu-btn">
+      <label htmlFor="active" className="menu-btn">
         {/* <i className="fas fa-bars"></i> */}
         <NavbarResponsiveBurgerStyle
           onClick={handelMenu}

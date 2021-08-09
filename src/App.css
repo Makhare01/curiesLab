@@ -93,6 +93,10 @@ body {
   color: #f0382e;
 }
 
+.navbar-active {
+  color: #f0382e;
+}
+
 @media screen and (max-width: 830px) {
   .navbar-navlink {
     color: white;
@@ -650,7 +654,7 @@ body {
   margin: 0;
   opacity: 0;
   cursor: pointer;
-  z-index: 3;
+  z-index: 9999;
 }
 
 #selected-value {
@@ -711,6 +715,8 @@ body {
   width: 298px;
   margin: 0 auto;
   background-color: #fff;
+  z-index: 999;
+  /* display: none; */
   /* border-radius: 4px; */
 }
 

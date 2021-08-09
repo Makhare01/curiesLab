@@ -1,6 +1,8 @@
 import React from "react";
 import NavBar from "../NavBar";
 import Box from "./Box";
+// import "animate.css/animate.min.css";
+import ScrollAnimation from "react-animate-on-scroll";
 
 import {
   BoxesContainerStyle,
@@ -10,49 +12,131 @@ import {
 } from "./Boxes.style";
 import BoxesSelect from "./BoxesSelect";
 
-const Boxes = () => {
+// Images
+import box1 from "../../img/box.png";
+
+const Boxes = (props) => {
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar index={props.active}></NavBar>
       <BoxesContainerStyle>
         <BoxesTitleStyle>აირჩიეთ კატეგორია</BoxesTitleStyle>
         <BoxesSelectDivStyle>
           <BoxesSelect></BoxesSelect>
         </BoxesSelectDivStyle>
         <BoxContainer>
-          <span data-aos="fade-up">
-            <Box />
-          </span>
-          <div data-aos="fade-up">
-            <Box />
-          </div>
-          <div data-aos="fade-up">
-            <Box />
-          </div>
-          <div data-aos="fade-up">
-            <Box />
-          </div>
-          <div data-aos="fade-up">
-            <Box />
-          </div>
-          <div data-aos="fade-up">
-            <Box />
-          </div>
-          <div data-aos="fade-up">
-            <Box />
-          </div>
-          <div data-aos="fade-up">
-            <Box />
-          </div>
-          <div data-aos="fade-up">
-            <Box />
-          </div>
-          <div data-aos="fade-up">
-            <Box />
-          </div>
-          <div data-aos="fade-up">
-            <Box />
-          </div>
+          <ScrollAnimation animateIn="FadeInUp">
+            <Box
+              Img={box1}
+              Title="Box 1"
+              Description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              Price="35₾"
+            />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="FadeInUp">
+            <Box
+              Img={box1}
+              Title="Box 1"
+              Description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              Price="35₾"
+            />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="FadeInUp">
+            <Box
+              Img={box1}
+              Title="Box 1"
+              Description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              Price="35₾"
+            />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="FadeInUp">
+            <Box
+              Img={box1}
+              Title="Box 1"
+              Description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              Price="35₾"
+            />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="FadeInUp">
+            <Box
+              Img={box1}
+              Title="Box 1"
+              Description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              Price="35₾"
+            />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="FadeInUp">
+            <Box
+              Img={box1}
+              Title="Box 1"
+              Description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              Price="35₾"
+            />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="FadeInUp">
+            <Box
+              Img={box1}
+              Title="Box 1"
+              Description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              Price="35₾"
+            />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="FadeInUp">
+            <Box
+              Img={box1}
+              Title="Box 1"
+              Description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              Price="35₾"
+            />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="FadeInUp">
+            <Box
+              Img={box1}
+              Title="Box 1"
+              Description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              Price="35₾"
+            />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="FadeInUp">
+            <Box
+              Img={box1}
+              Title="Box 1"
+              Description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              Price="35₾"
+            />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="FadeInUp">
+            <Box
+              Img={box1}
+              Title="Box 1"
+              Description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              Price="35₾"
+            />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="FadeInUp">
+            <Box
+              Img={box1}
+              Title="Box 1"
+              Description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              Price="35₾"
+            />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="FadeInUp">
+            <Box
+              Img={box1}
+              Title="Box 1"
+              Description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              Price="35₾"
+            />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="FadeInUp">
+            <Box
+              Img={box1}
+              Title="Box 1"
+              Description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              Price="35₾"
+            />
+          </ScrollAnimation>
         </BoxContainer>
       </BoxesContainerStyle>
     </>

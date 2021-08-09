@@ -5,13 +5,14 @@ export const BoxContainer = styled.div`
   max-width: 850px;
   margin: 0 auto;
   /* border: solid 1px red; */
-  margin-top: 100px;
+  margin-top: 150px;
   display: grid;
   /* grid-gap: 40px; */
   grid-row-gap: 40px;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
+  /* transition: 0.3s; */
 
   @media (max-width: 950px) {
     grid-template-columns: repeat(2, 1fr);
@@ -27,7 +28,7 @@ export const BoxesContainerStyle = styled.div`
   height: auto;
   min-height: 100vh;
   margin: auto;
-  border: solid 1px red;
+  /* border: solid 1px red; */
   margin-top: 50px;
 `;
 
@@ -36,6 +37,7 @@ export const BoxesTitleStyle = styled.p`
   font-family: TBC Contractica CAPS;
   font-size: 36px;
   color: #55636e;
+  margin-top: 100px;
 `;
 
 export const BoxesSelectDivStyle = styled.div`

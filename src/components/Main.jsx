@@ -4,24 +4,24 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Boxes from "../components/Boxes/Boxes";
 import MainPageSwiper from "./mainPageSwiper";
-import About from "./About";
-import Team from "./Team";
+import About from "./About/About";
+import Team from "./Team/Team";
 import News from "./News";
 
 const Main = () => {
   return (
     <Switch>
       <Route exact path="/">
-        <MainPageSwiper active="1" />
+        <MainPageSwiper />
       </Route>
       <Route exact path="/boxes">
-        <Boxes />
+        <Boxes active={1} />
       </Route>
       <Route exact path="/about-us">
-        <About />
+        <About active={2} />
       </Route>
       <Route exact path="/team">
-        <Team />
+        <Team active={3} />
       </Route>
 
       <Route exact path="/news">

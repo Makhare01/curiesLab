@@ -13,7 +13,7 @@ const ContactNavbar = () => {
     <ContactNavbarDivStyle>
       <ContactNavbarIconsDivStyle>
         <a
-          href="https://bit.ly/3BeA9vg"
+          href="https://www.facebook.com"
           target="_blank"
           rel="noopener noreferrer"
         >

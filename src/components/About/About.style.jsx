@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutContainerStyle = styled.div`
   width: 90%;
-  height: calc(100vh - 160px);
+  height: calc(100vh - 130px);
   margin: auto;
   margin-top: 30px;
   display: flex;

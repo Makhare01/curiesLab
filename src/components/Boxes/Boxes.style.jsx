@@ -7,7 +7,6 @@ export const BoxContainer = styled.div`
   /* border: solid 1px red; */
   margin-top: 150px;
   display: grid;
-  /* grid-gap: 40px; */
   grid-row-gap: 40px;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -38,6 +37,10 @@ export const BoxesTitleStyle = styled.p`
   font-size: 36px;
   color: #55636e;
   margin-top: 100px;
+
+  @media (max-width: 800px) {
+    margin-top: 30px;
+  }
 `;
 
 export const BoxesSelectDivStyle = styled.div`

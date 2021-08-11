@@ -1,5 +1,4 @@
 import React from "react";
-import { BoxesSelectTagStyle, BoxesOptionTagStyle } from "./Boxes.style";
 
 const BoxesSelect = () => {
   const handleClose = () => {

@@ -10,7 +10,7 @@ export const ContactNavbarDivStyle = styled.div`
   margin-left: auto;
   margin-right: auto;
   bottom: 20px;
-  border: solid 1px green;
+  /* border: solid 1px green; */
   z-index: 100;
   display: flex;
   /* align-items: center; */

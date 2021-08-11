@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const NavbarStyle = styled.div`
   width: 90%;
-  /* max-width: 1920px; */
   height: 60px;
   position: sticky;
   left: 0;
@@ -10,13 +9,12 @@ export const NavbarStyle = styled.div`
   margin-left: auto;
   margin-right: auto;
   top: 20px;
-  /* border: solid 1px green; */
   z-index: 100;
   display: flex;
   align-items: center;
+  /* background-color: red; */
 
   @media screen and (max-width: 830px) {
-    /* display: none; */
     top: 10px;
     justify-content: space-between;
     height: 40px;

@@ -51,10 +51,13 @@ export const BoxButtonStyle = styled.button`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   display: block;
-  margin: auto;
-  margin-top: 20px;
   cursor: pointer;
   transition: 0.3s;
+  position: absolute;
+  bottom: 15px;
+  margin: auto;
+  left: 0;
+  right: 0;
 
   &:hover {
     background: #f33e00;

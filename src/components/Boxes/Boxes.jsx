@@ -3,6 +3,7 @@ import NavBar from "../NavBar";
 import Box from "./Box";
 // import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";
+// import BoxImg from "../../../../server/public/images/1630332145-Box 2.png";
 
 import {
   BoxesContainerStyle,
@@ -19,21 +20,47 @@ import box1 from "../../img/box.png";
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: `http://127.0.0.1:8000/api/`,
+  baseURL: `http://127.0.0.1:8000/`,
 });
+
+// const accessToken = "11|wFv6uXBMVhVRdZyASwExXlnnteJJzHDjcULe2A0T";
+
+// axios.interceptors.request.use(
+//   (config) => {
+//     config.headers.authorization = `Bearer ${accessToken}`;
+//     return config;
+//   },
+//   (error) => {
+//     return Promise.reject(error);
+//   }
+// );
 
 const Boxes = (props) => {
   const [boxes, setBoxes] = useState();
 
   useEffect(() => {
-    api.get("/boxes").then((res) => {
+    api.get("/api/boxes").then((res) => {
       // console.log(res.data);
       setBoxes(res.data);
+      console.log(res);
     });
   }, []);
 
+  const register = async () => {
+    let res = api.post("/register", {
+      name: "Makhare",
+      email: "maxare2016@gmail.com",
+      password: "123456789",
+      password_confirmation: "123456789",
+    });
+
+    axios.defaults.headers.common["X-CSRF-TOKEN"] = res.data;
+
+    console.log(res);
+  };
+
   const createBox = async () => {
-    let res = api.post("/boxes", {
+    let res = api.post("/api/boxes", {
       title: "Box 3",
       price: "40",
       description: "lorem ipsum 3",
@@ -52,15 +79,14 @@ const Boxes = (props) => {
         <BoxesTitleStyle>აირჩიეთ კატეგორია</BoxesTitleStyle>
         <BoxesSelectDivStyle>
           <BoxesSelect></BoxesSelect>
-          <button onClick={createBox}>Add</button>
         </BoxesSelectDivStyle>
         <BoxContainer>
           {boxes &&
-            boxes.map((box) => {
+            boxes.map((box, index) => {
               return (
-                <ScrollAnimation animateIn="FadeInUp">
+                <ScrollAnimation animateIn="FadeInUp" key={index}>
                   <Box
-                    Img={box1}
+                    Img="../../../../server/public/images/1630343197-Box 3.png"
                     Title={box.title}
                     Description={
                       box.description +

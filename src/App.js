@@ -1,3 +1,4 @@
+import "./App.scss";
 import "./App.css";
 import Main from "./components/Main";
 

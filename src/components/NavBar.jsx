@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import {
   NavbarStyle,
@@ -11,10 +11,13 @@ import {
   NavbarContactResponsiveStyle,
   NavbarContactLabelStyle,
   NavbarResponsiveBurgerStyle,
+  NavbarLangChangerStyle,
+  NavbarLangChangerLabelStyle,
 } from "./NavBar.style";
 import logo from "../img/clip-402.png";
 
 const NavBar = (props) => {
+  const [lang, setLang] = useState(false);
   const handelMenu = () => {
     const dots = document.getElementById("fp-nav");
 
@@ -38,6 +41,16 @@ const NavBar = (props) => {
       }
     }
   };
+
+  const handleLang = (e) => {
+    if (e == true) {
+      localStorage.setItem("lang", "EN");
+    } else {
+      localStorage.setItem("lang", "GE");
+    }
+    setLang(true);
+    console.log(localStorage.getItem("lang"));
+  };
   return (
     <NavbarStyle>
       <NavbarLogoDivStyle>
@@ -56,7 +69,9 @@ const NavBar = (props) => {
               }
               to="/boxes"
             >
-              სამეცნიერო ყუთები
+              {localStorage.getItem("lang") === "GE"
+                ? "სამეცნიერო ყუთები"
+                : localStorage.getItem("lang") === "EN" && "Boxes"}
             </NavLink>
           </NavbarNavlinkLiStyle>
           <NavbarNavlinkLiStyle>
@@ -85,9 +100,19 @@ const NavBar = (props) => {
           </NavbarNavlinkLiStyle>
         </NavbarNavlinkUlStyle>
       </NavLinkDivStyle>
-      <NavbarContactStyle>
+      {/* <NavbarContactStyle>
         <NavbarContactLabelStyle>კონტაქტი</NavbarContactLabelStyle>
-      </NavbarContactStyle>
+      </NavbarContactStyle> */}
+      <label class="language-switcher">
+        <input
+          onChange={(e) => handleLang(e.target.checked)}
+          type="checkbox"
+          id="lang-switcher"
+        />
+        <span class="slider round"></span>
+        <span class="select-fr">GE</span>
+        <span class="select-en">EN</span>
+      </label>
 
       <input type="checkbox" id="active"></input>
       <label htmlFor="active" className="menu-btn">
@@ -114,9 +139,9 @@ const NavBar = (props) => {
               გუნდი
             </NavLink>
           </NavbarNavlinkLiStyle>
-          <NavbarContactResponsiveStyle>
+          {/* <NavbarContactResponsiveStyle>
             <NavbarContactLabelStyle>კონტაქტი</NavbarContactLabelStyle>
-          </NavbarContactResponsiveStyle>
+          </NavbarContactResponsiveStyle> */}
 
           {/* <li>
             <a href="#">About</a>

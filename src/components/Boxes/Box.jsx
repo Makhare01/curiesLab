@@ -11,14 +11,15 @@ import {
   BoxButtonLabelStyle,
 } from "./Box.style";
 
-const Box = (props) => {
+const Box = ({ Price, Img, Title, Description }) => {
+  console.log(Img);
   return (
     <BoxDivStyle>
       <BoxPriceDivStyle />
-      <BoxPriceLabelStyle> {props.Price} </BoxPriceLabelStyle>
-      <BoxImageStyle src={props.Img} />
-      <BoxTitleStyle> {props.Title} </BoxTitleStyle>
-      <BoxDescriptionStyle> {props.Description} </BoxDescriptionStyle>
+      <BoxPriceLabelStyle> {Price} </BoxPriceLabelStyle>
+      <BoxImageStyle src={Img} alt="box image" />
+      <BoxTitleStyle> {Title} </BoxTitleStyle>
+      <BoxDescriptionStyle> {Description} </BoxDescriptionStyle>
       <BoxButtonStyle>
         <BoxButtonLabelStyle>ყიდვა</BoxButtonLabelStyle>
       </BoxButtonStyle>

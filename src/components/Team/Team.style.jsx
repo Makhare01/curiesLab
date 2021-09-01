@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TeamContainerStyle = styled.div`
   width: 90%;
-  height: calc(100vh - 130px);
+  height: calc(100vh - 170px);
   margin: auto;
   margin-top: 30px;
   /* border: solid 1px red; */

@@ -185,7 +185,7 @@ body {
   overflow: hidden;
   position: absolute;
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
   /* border: solid 1px green; */
 }
 .section-one > .fp-tableCell .animated-title > div div {
@@ -216,9 +216,9 @@ body {
 
 @media screen and (max-width: 1024px) {
   .section-one > .fp-tableCell .animated-title {
-    left: 15%;
+    left: 10%;
     top: 0%;
-    width: 70%;
+    width: 80%;
     /* border: solid 1px green; */
     align-self: center;
   }

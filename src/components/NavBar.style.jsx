@@ -43,54 +43,54 @@ export const NavLinkDivStyle = styled.div`
   }
 `;
 
-export const NavbarContactStyle = styled.button`
-  width: 150px;
-  height: 50px;
-  padding-top: 5px;
-  /* background-color: #f4c5b5; */
-  background-color: #f25d2a;
-  border: none;
-  float: right;
-  cursor: pointer;
-  transition: 0.3s;
+// export const NavbarContactStyle = styled.button`
+//   width: 150px;
+//   height: 50px;
+//   padding-top: 5px;
+//   /* background-color: #f4c5b5; */
+//   background-color: #f25d2a;
+//   border: none;
+//   float: right;
+//   cursor: pointer;
+//   transition: 0.3s;
 
-  &:hover {
-    background-color: #f33e00;
-  }
+//   &:hover {
+//     background-color: #f33e00;
+//   }
 
-  @media screen and (max-width: 830px) {
-    display: none;
-  }
-`;
+//   @media screen and (max-width: 830px) {
+//     display: none;
+//   }
+// `;
 
-export const NavbarContactResponsiveStyle = styled.button`
-  width: 150px;
-  height: 50px;
-  padding-top: 5px;
-  /* background-color: #f4c5b5; */
-  background-color: white;
-  border: none;
-  /* float: right; */
-  cursor: pointer;
-  transition: 0.3s;
+// export const NavbarContactResponsiveStyle = styled.button`
+//   width: 150px;
+//   height: 50px;
+//   padding-top: 5px;
+//   /* background-color: #f4c5b5; */
+//   background-color: white;
+//   border: none;
+//   /* float: right; */
+//   cursor: pointer;
+//   transition: 0.3s;
 
-  /* &:hover {
-    background-color: #f33e00;
-  } */
-`;
+//   /* &:hover {
+//     background-color: #f33e00;
+//   } */
+// `;
 
-export const NavbarContactLabelStyle = styled.label`
-  line-height: 50px;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: TBC Contractica CAPS Black;
-  cursor: pointer;
-  color: white;
+// export const NavbarContactLabelStyle = styled.label`
+//   line-height: 50px;
+//   font-size: 18px;
+//   font-weight: bold;
+//   font-family: TBC Contractica CAPS Black;
+//   cursor: pointer;
+//   color: white;
 
-  @media screen and (max-width: 830px) {
-    color: #f33e00;
-  }
-`;
+//   @media screen and (max-width: 830px) {
+//     color: #f33e00;
+//   }
+// `;
 
 export const NavbarNavlinkUlStyle = styled.ul`
   width: auto;
@@ -130,6 +130,42 @@ export const NavbarResponsiveBurgerStyle = styled.i`
   /* color: #f33e00; */
   color: white;
   cursor: pointer;
+
+  @media screen and (min-width: 830px) {
+    display: none;
+  }
+`;
+
+export const NavbarLangChangeDivStyle = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* display: block; */
+
+  @media screen and (max-width: 830px) {
+    display: none;
+  }
+`;
+
+export const NavbarLangChangeLabelStyle = styled.p`
+  position: relative;
+  top: 3px;
+  font-size: 14px;
+  font-family: TBC Contractica CAPS;
+  cursor: pointer;
+
+  @media screen and (max-width: 830px) {
+    color: white;
+  }
+`;
+
+export const NavbarLangChangeResponsiveDivStyle = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  width: 80px;
+  margin: auto;
 
   @media screen and (min-width: 830px) {
     display: none;

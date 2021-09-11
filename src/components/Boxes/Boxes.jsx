@@ -42,38 +42,32 @@ const Boxes = (props) => {
     api.get("/api/boxes").then((res) => {
       // console.log(res.data);
       setBoxes(res.data);
-      console.log(res);
     });
   }, []);
 
-  const register = async () => {
-    let res = api.post("/register", {
-      name: "Makhare",
-      email: "maxare2016@gmail.com",
-      password: "123456789",
-      password_confirmation: "123456789",
-    });
+  // const register = async () => {
+  //   let res = api.post("/register", {
+  //     name: "Makhare",
+  //     email: "maxare2016@gmail.com",
+  //     password: "123456789",
+  //     password_confirmation: "123456789",
+  //   });
 
-    axios.defaults.headers.common["X-CSRF-TOKEN"] = res.data;
+  //   axios.defaults.headers.common["X-CSRF-TOKEN"] = res.data;
+  // };
 
-    console.log(res);
-  };
-
-  const createBox = async () => {
-    let res = api.post("/api/boxes", {
-      title: "Box 3",
-      price: "40",
-      description: "lorem ipsum 3",
-      category: "C3",
-      file_path: "/file/photo3.png",
-    });
-
-    console.log(res);
-  };
+  // const createBox = async () => {
+  //   let res = api.post("/api/boxes", {
+  //     title: "Box 3",
+  //     price: "40",
+  //     description: "lorem ipsum 3",
+  //     category: "C3",
+  //     file_path: "/file/photo3.png",
+  //   });
+  // };
 
   return (
     <>
-      {console.log("box = ", boxes)}
       <NavBar className={"navbar-style"} index={props.active}></NavBar>
       <BoxesContainerStyle>
         <BoxesTitleStyle>აირჩიეთ კატეგორია</BoxesTitleStyle>
@@ -86,7 +80,7 @@ const Boxes = (props) => {
               return (
                 <ScrollAnimation animateIn="FadeInUp" key={index}>
                   <Box
-                    Img="../../../../server/public/images/1630343197-Box 3.png"
+                    Img={box1}
                     Title={box.title}
                     Description={
                       box.description +

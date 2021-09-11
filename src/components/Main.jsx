@@ -6,7 +6,7 @@ import Boxes from "../components/Boxes/Boxes";
 import MainPageSwiper from "./mainPageSwiper";
 import About from "./About/About";
 import Team from "./Team/Team";
-import News from "./News";
+import NewsComponent from "./News/NewsComponent";
 
 const Main = () => {
   return (
@@ -25,7 +25,7 @@ const Main = () => {
       </Route>
 
       <Route exact path="/news">
-        <News />
+        <NewsComponent />
       </Route>
     </Switch>
   );

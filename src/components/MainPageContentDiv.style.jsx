@@ -10,6 +10,8 @@ export const MainPageContentDivStyle = styled.div`
   top: calc(50% - 60px);
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
 
   @media screen and (max-width: 830px) {
     height: calc(100% - 130px);

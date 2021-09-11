@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import NavBar from "./NavBar";
 import ContactNavbar from "./ContactNavbar";
 import { MainPageContentDivStyle } from "./MainPageContentDiv.style";
@@ -28,21 +28,12 @@ import {
   ThirdSectionButtonLabelStyle,
   ThirdSectionImgDivStyle,
   ThirdSectionImgStyle,
-  // --------------------------
-  FourthSectionTextDivStyle,
-  FourthSectionTextAnimationDivStyle,
-  FourthSectionTitleStyle,
-  // FourthSectionTextStyle,
-  FourthSectionButtonStyle,
-  FourthSectionButtonLabelStyle,
-  FourthSectionImgDivStyle,
-  // FourthSectionImgStyle,
 } from "./Section.style";
 
 import FirstImg from "../img/first-section-img.png";
 import SecondImg from "../img/taxi-science.png";
 import ThirdSupportImg from "../img/help.png";
-import NewsCarousel from "./NewsCarousel";
+import NewsCarousel from "./News/NewsCarousel";
 import { useTranslation } from "react-i18next";
 
 const MainPageSwiper = () => {
@@ -58,6 +49,10 @@ const MainPageSwiper = () => {
         navigationColors={"red"}
         scrollBar={false}
         dragAndMove={true}
+        waterEffect={false}
+        slidesNavigation={true}
+        slidesNavPosition={"bottom"}
+        verticalCentered={true}
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper style={{ border: "solid 1px red" }}>
@@ -93,17 +88,15 @@ const MainPageSwiper = () => {
                   <SecondSectionTextDivStyle>
                     <SecondSectionTextAnimationDivStyle className="section-text">
                       <SecondSectionTitleStyle>
-                        სამეცნიერო ყუთები
+                        {t("SCIENCE_BOXES")}
                       </SecondSectionTitleStyle>
                       <SecondSectionTextStyle>
-                        კიურის ლაბორატორიის სამეცნიერო ყუთებში თქვენ ნახავთ
-                        ყველა საჭირო ინვერტარსა და მასალას ექსპერიმენტის
-                        ჩასატარებლად
+                        {t("SECONS_SLIDE_TEXT")}
                       </SecondSectionTextStyle>
                       <NavLink style={{ textDecoration: "none" }} to="/boxes">
                         <SecondSectionButtonStyle>
                           <SecondSectionButtonLabelStyle>
-                            სამეცნიერო ყუთები
+                            {t("SCIENCE_BOXES_LABEL")}
                           </SecondSectionButtonLabelStyle>
                         </SecondSectionButtonStyle>
                       </NavLink>
@@ -124,11 +117,10 @@ const MainPageSwiper = () => {
                   <ThirdSectionTextDivStyle>
                     <ThirdSectionTextAnimationDivStyle className="section-text">
                       <ThirdSectionTitleStyle>
-                        მხარდაჭერა
+                        {t("SUPPORT")}
                       </ThirdSectionTitleStyle>
                       <ThirdSectionTextStyle>
-                        გახდი ჩვენი სტარტაპის მხარდამჭერი და დაეხმარე პროექტს
-                        განვითარებაში
+                        {t("THIRD_SLIDE_TEXT")}
                       </ThirdSectionTextStyle>
 
                       <ThirdSectionButtonStyle>
@@ -138,7 +130,7 @@ const MainPageSwiper = () => {
                           style={{ textDecoration: "none" }}
                         >
                           <ThirdSectionButtonLabelStyle>
-                            დაუჭირე მხარი
+                            {t("SUPPORT_LABEL")}
                           </ThirdSectionButtonLabelStyle>
                         </a>
                       </ThirdSectionButtonStyle>
@@ -156,16 +148,11 @@ const MainPageSwiper = () => {
 
               <div className="section section-fourth">
                 <MainPageContentDivStyle>
-                  <FourthSectionTextDivStyle>
+                  {/* <FourthSectionTextDivStyle>
                     <FourthSectionTextAnimationDivStyle className="section-text">
                       <FourthSectionTitleStyle>
                         სიახლეები
                       </FourthSectionTitleStyle>
-                      {/* <FourthSectionTextStyle>
-                          გახდი ჩვენი სტარტაპის მხარდამჭერი და დაეხმარე პროექტს
-                          განვითარებაში
-                        </FourthSectionTextStyle> */}
-
                       <NavLink style={{ textDecoration: "none" }} to="/news">
                         <FourthSectionButtonStyle>
                           <FourthSectionButtonLabelStyle>
@@ -174,17 +161,9 @@ const MainPageSwiper = () => {
                         </FourthSectionButtonStyle>
                       </NavLink>
                     </FourthSectionTextAnimationDivStyle>
-                  </FourthSectionTextDivStyle>
-
-                  <FourthSectionImgDivStyle>
-                    {/* <FourthSectionImgStyle
-                        className="section-img"
-                        src={ThirdSupportImg}
-                      /> */}
-                    <div className="section-img">
-                      <NewsCarousel></NewsCarousel>
-                    </div>
-                  </FourthSectionImgDivStyle>
+                  </FourthSectionTextDivStyle> */}
+                  <NewsCarousel></NewsCarousel>
+                  {/* <FourthSectionImgDivStyle></FourthSectionImgDivStyle> */}
                 </MainPageContentDivStyle>
               </div>
 

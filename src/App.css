@@ -54,14 +54,12 @@ body {
 }
 
 #fp-nav ul li,
-.fp-slidesNav ul li {
-  /* border: solid 1px red !important; */
+ul li {
   height: 50px !important;
-  /* justify-content: space-between; */
 }
 
 #fp-nav ul li a span,
-.fp-slidesNav ul li a span {
+ul li a span {
   width: 10px !important;
   height: 10px !important;
   margin: -5px 0 0 -5px !important;
@@ -70,8 +68,8 @@ body {
 
 #fp-nav ul li:hover a.active span,
 #fp-nav ul li a.active span,
-.fp-slidesNav ul li:hover a.active span,
-.fp-slidesNav ul li a.active span {
+ul li:hover a.active span,
+ul li a.active span {
   height: 18px !important;
   width: 18px !important;
   margin: -9px 0 0 -9px !important;
@@ -82,6 +80,52 @@ body {
 
 #fp-nav .fp-tooltip {
   font-family: Arial, sans-serif !important;
+}
+
+/* Slides */
+.slide {
+  position: relative;
+}
+.fp-slidesNav.fp-bottom {
+  /* border: solid 1px black; */
+  display: flex !important;
+  justify-content: space-around;
+  margin-bottom: 50px !important;
+}
+
+.fp-controlArrow.fp-prev {
+  /* border-width: 28.5px 25px 28.5px 0 !important; */
+  top: 90% !important;
+  left: 100px !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  background-image: url("./img/icons8-chevron-left-60.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 1px transparent !important;
+}
+
+.fp-controlArrow.fp-next {
+  /* border-width: 28.5px 0 28.5px 25px !important; */
+  top: 90% !important;
+  left: 200px !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  background-image: url("./img/icons8-chevron-right-60.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 1px transparent !important;
+}
+
+@media screen and (max-width: 830px) {
+  .fp-controlArrow.fp-next {
+    display: none;
+  }
+  .fp-controlArrow.fp-prev {
+    display: none;
+  }
 }
 
 .navbar-navlink {
@@ -109,17 +153,17 @@ body {
 
 @media screen and (max-width: 830px) {
   #fp-nav ul,
-  .fp-slidesNav ul {
+  ul {
     margin-left: -15px !important;
   }
 
   #fp-nav ul li,
-  .fp-slidesNav ul li {
+  ul li {
     height: 20px !important;
   }
 
   #fp-nav ul li a span,
-  .fp-slidesNav ul li a span {
+  ul li a span {
     width: 8px !important;
     height: 8px !important;
     margin: -4px 0 0 -4px !important;
@@ -128,8 +172,8 @@ body {
 
   #fp-nav ul li:hover a.active span,
   #fp-nav ul li a.active span,
-  .fp-slidesNav ul li:hover a.active span,
-  .fp-slidesNav ul li a.active span {
+  ul li:hover a.active span,
+  ul li a.active span {
     height: 14px !important;
     width: 14px !important;
     margin: -7px 0 0 -7px !important;
@@ -1022,60 +1066,4 @@ body {
   background-color: #143240;
   border-radius: 4px;
   box-shadow: 0 10px 20px -5px rgba(20, 50, 64, 0.76);
-}
-
-/* Reqct Swiper Css */
-.swiper {
-  width: 240px;
-  height: 320px;
-}
-
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.swiper-slide:nth-child(1n) {
-  background-color: rgb(206, 17, 17);
-}
-
-.swiper-slide:nth-child(2n) {
-  background-color: rgb(0, 140, 255);
-}
-
-.swiper-slide:nth-child(3n) {
-  background-color: rgb(10, 184, 111);
-}
-
-.swiper-slide:nth-child(4n) {
-  background-color: rgb(211, 122, 7);
-}
-
-.swiper-slide:nth-child(5n) {
-  background-color: rgb(118, 163, 12);
-}
-
-.swiper-slide:nth-child(6n) {
-  background-color: rgb(180, 10, 47);
-}
-
-.swiper-slide:nth-child(7n) {
-  background-color: rgb(35, 99, 19);
-}
-
-.swiper-slide:nth-child(8n) {
-  background-color: rgb(0, 68, 255);
-}
-
-.swiper-slide:nth-child(9n) {
-  background-color: rgb(218, 12, 218);
-}
-
-.swiper-slide:nth-child(10n) {
-  background-color: rgb(54, 94, 77);
 }

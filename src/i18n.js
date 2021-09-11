@@ -12,6 +12,14 @@ const resources = {
       WORLD: "WORLD",
       FIRSTPAGETEST:
         "The goal of the Curie Lab is to get kids interested STEM subjects",
+      SCIENCE_BOXES: "Science boxes",
+      SECONS_SLIDE_TEXT:
+        "In the scientific boxes of Curie Lab you will find all the necessary inverters and materials for conducting the experiment",
+      SCIENCE_BOXES_LABEL: "Science boxes",
+      SUPPORT: "SUPPORT",
+      THIRD_SLIDE_TEXT:
+        "Become a supporter of our startup and help the project develop",
+      SUPPORT_LABEL: "support",
     },
   },
   GE: {
@@ -24,6 +32,14 @@ const resources = {
       WORLD: "სამყაროში",
       FIRSTPAGETEST:
         "კიურის ლაბორატორიის მიზანია ბავშვები დაინტერესდნენ STEM საგნებით",
+      SCIENCE_BOXES: "სამეცნიერო ყუთები",
+      SECONS_SLIDE_TEXT:
+        "კიურის ლაბორატორიის სამეცნიერო ყუთებში თქვენ ნახავთ ყველა საჭირო ინვერტარსა და მასალას ექსპერიმენტის ჩასატარებლად",
+      SCIENCE_BOXES_LABEL: "სამეცნიერო ყუთები",
+      SUPPORT: "მხარდაჭერა",
+      THIRD_SLIDE_TEXT:
+        "გახდი ჩვენი სტარტაპის მხარდამჭერი და დაეხმარე პროექტს განვითარებაში",
+      SUPPORT_LABEL: "დაუჭირე მხარი",
     },
   },
 };

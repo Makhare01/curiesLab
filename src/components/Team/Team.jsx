@@ -10,42 +10,41 @@ import {
   TeamTitleStyle,
 } from "./Team.style";
 
+import { useTranslation } from "react-i18next";
+
+
 const Team = (props) => {
+  const { t } = useTranslation();
+
   return (
     <>
       <NavBar index={props.active} />
       <TeamContainerStyle>
-        <TeamTitleStyle>გუნდი</TeamTitleStyle>
+        <TeamTitleStyle> {t("TEAM_CARD_TITLE")} </TeamTitleStyle>
         <TeamCardsDivStyle>
           <TeamCard
             img={profileImg}
-            name={"მარიკა ცინცაძე"}
-            position="აღმასრულებელი დირექტორი"
-            description="გენერირებული LOREM IPSUM არასოდეს 
-            არ არის გამეორებადი, შემთხვევითი 
-            სიტყვების ან ხუმრობების შემცველი."
+            name={t("TEAMMATE_NAME")}
+            position={t("TEAMMATE_POSITION")}
+            description={t("TEAMMATE_DEPTION")}
             facebook="https://www.facebook.com/marika.tsintsadze02"
             twitter="https://twitter.com/"
             instagram="https://www.instagram.com/"
           />
           <TeamCard
             img={profileImg}
-            name={"მარიკა ცინცაძე"}
-            position="აღმასრულებელი დირექტორი"
-            description="გენერირებული LOREM IPSUM არასოდეს 
-            არ არის გამეორებადი, შემთხვევითი 
-            სიტყვების ან ხუმრობების შემცველი."
+            name={t("TEAMMATE_NAME")}
+            position={t("TEAMMATE_POSITION")}
+            description={t("TEAMMATE_DEPTION")}
             facebook="https://www.facebook.com/marika.tsintsadze02"
             twitter="https://twitter.com/"
             instagram="https://www.instagram.com/"
           />
           <TeamCard
             img={profileImg}
-            name={"მარიკა ცინცაძე"}
-            position="აღმასრულებელი დირექტორი"
-            description="გენერირებული LOREM IPSUM არასოდეს 
-            არ არის გამეორებადი, შემთხვევითი 
-            სიტყვების ან ხუმრობების შემცველი."
+            name={t("TEAMMATE_NAME")}
+            position={t("TEAMMATE_POSITION")}
+            description={t("TEAMMATE_DEPTION")}
             facebook="https://www.facebook.com/marika.tsintsadze02"
             twitter="https://twitter.com/"
             instagram="https://www.instagram.com/"

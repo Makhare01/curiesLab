@@ -28,16 +28,31 @@ import {
   ThirdSectionButtonLabelStyle,
   ThirdSectionImgDivStyle,
   ThirdSectionImgStyle,
+  // --------------------------
+  FourthSectionTextDivStyle,
+  FourthSectionTextAnimationDivStyle,
+  FourthSectionTitleStyle,
+  FourthSectionTextStyle,
+  FourthSectionButtonStyle,
+  FourthSectionButtonLabelStyle,
+  FourthSectionImgDivStyle,
+  FourthSectionImgStyle
 } from "./Section.style";
 
 import FirstImg from "../img/first-section-img.png";
 import SecondImg from "../img/taxi-science.png";
 import ThirdSupportImg from "../img/help.png";
+import NewsImage from "../img/news.png"
+import bgImage from "../img/Background-shapes-grey.svg"
 import NewsCarousel from "./News/NewsCarousel";
 import { useTranslation } from "react-i18next";
 
+// Swiper
+
+
 const MainPageSwiper = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <NavBar></NavBar>
@@ -54,9 +69,11 @@ const MainPageSwiper = () => {
         slidesNavPosition={"bottom"}
         verticalCentered={true}
         render={({ state, fullpageApi }) => {
+          <img className="background-shapes-img" src={bgImage} />
           return (
-            <ReactFullpage.Wrapper style={{ border: "solid 1px red" }}>
+            <ReactFullpage.Wrapper>
               <div className="section section-one">
+                {/* <img className="background-shapes-img" src={bgImage} /> */}
                 <MainPageContentDivStyle>
                   <FirstSectionTextDivStyle>
                     <FirstSectionTextAnimationDivStyle className="section-text">
@@ -84,6 +101,7 @@ const MainPageSwiper = () => {
               </div>
 
               <div className="section section-two">
+                {/* <img className="background-shapes-img" src={bgImage} /> */}
                 <MainPageContentDivStyle>
                   <SecondSectionTextDivStyle>
                     <SecondSectionTextAnimationDivStyle className="section-text">
@@ -113,6 +131,7 @@ const MainPageSwiper = () => {
               </div>
 
               <div className="section section-three">
+                {/* <img className="background-shapes-img" src={bgImage} /> */}
                 <MainPageContentDivStyle>
                   <ThirdSectionTextDivStyle>
                     <ThirdSectionTextAnimationDivStyle className="section-text">
@@ -147,29 +166,36 @@ const MainPageSwiper = () => {
               </div>
 
               <div className="section section-fourth">
+                {/* <img className="background-shapes-img" src={bgImage} /> */}
                 <MainPageContentDivStyle>
-                  {/* <FourthSectionTextDivStyle>
+                  <FourthSectionTextDivStyle>
                     <FourthSectionTextAnimationDivStyle className="section-text">
                       <FourthSectionTitleStyle>
-                        სიახლეები
+                        {t("NEWS")}
                       </FourthSectionTitleStyle>
+                      <FourthSectionTextStyle>
+                        {t("NEWS_SLIDE_TEXT")}
+                      </FourthSectionTextStyle>
                       <NavLink style={{ textDecoration: "none" }} to="/news">
                         <FourthSectionButtonStyle>
                           <FourthSectionButtonLabelStyle>
-                            ყველა სიახლე
+                            {t("NEWS_LABEL")}
                           </FourthSectionButtonLabelStyle>
                         </FourthSectionButtonStyle>
                       </NavLink>
                     </FourthSectionTextAnimationDivStyle>
-                  </FourthSectionTextDivStyle> */}
-                  <NewsCarousel></NewsCarousel>
-                  {/* <FourthSectionImgDivStyle></FourthSectionImgDivStyle> */}
+                  </FourthSectionTextDivStyle>
+                  <FourthSectionImgDivStyle>
+                    <FourthSectionImgStyle className="section-img" src={NewsImage} />
+                  </FourthSectionImgDivStyle>
                 </MainPageContentDivStyle>
               </div>
 
               <div className="section section-fifth">
+                {/* <img className="background-shapes-img" src={bgImage} /> */}
                 <MainPageContentDivStyle>
-                  <NewsCarousel></NewsCarousel>
+                  {/* <NewsCarousel /> */}
+
                 </MainPageContentDivStyle>
               </div>
             </ReactFullpage.Wrapper>

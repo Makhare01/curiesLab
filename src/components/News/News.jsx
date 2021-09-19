@@ -19,25 +19,27 @@ import news1 from "../../img/news1.png";
 
 const News = ({ title, description }) => {
   return (
-    <NewsCardDivStyle>
-      <NewsCardLeftDivStyle>
-        <NewsCardLeftInsideDivStyle>
-          <NewsCardLeftTitleStyle> {title} </NewsCardLeftTitleStyle>
-          <NewsCardDescriptionStyle>
-            <NewsCardLeftInsideDescriptionDivStyle>
-              {description}
-            </NewsCardLeftInsideDescriptionDivStyle>
-          </NewsCardDescriptionStyle>
-          <NewsCardreadMoreButtonStyle>
-            <NewsCardReadMoreLabelStyle>მეტის ნახვა</NewsCardReadMoreLabelStyle>
-          </NewsCardreadMoreButtonStyle>
-        </NewsCardLeftInsideDivStyle>
-      </NewsCardLeftDivStyle>
-      {/* ----------------------------------- */}
-      <NewsCardRightDivStyle>
-        <NewsCardRightImgStyle src={news1} />
-      </NewsCardRightDivStyle>
-    </NewsCardDivStyle>
+    <div className="slide">
+      <NewsCardDivStyle>
+        <NewsCardLeftDivStyle>
+          <NewsCardLeftInsideDivStyle>
+            <NewsCardLeftTitleStyle> {title} </NewsCardLeftTitleStyle>
+            <NewsCardDescriptionStyle>
+              <NewsCardLeftInsideDescriptionDivStyle>
+                {description}
+              </NewsCardLeftInsideDescriptionDivStyle>
+            </NewsCardDescriptionStyle>
+            <NewsCardreadMoreButtonStyle>
+              <NewsCardReadMoreLabelStyle>მეტის ნახვა</NewsCardReadMoreLabelStyle>
+            </NewsCardreadMoreButtonStyle>
+          </NewsCardLeftInsideDivStyle>
+        </NewsCardLeftDivStyle>
+        {/* ----------------------------------- */}
+        <NewsCardRightDivStyle>
+          <NewsCardRightImgStyle src={news1} />
+        </NewsCardRightDivStyle>
+      </NewsCardDivStyle>
+    </div>
   );
 };
 

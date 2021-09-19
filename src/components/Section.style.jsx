@@ -662,14 +662,19 @@ export const FourthSectionTextAnimationDivStyle = styled.div`
   max-width: 500px;
   height: auto;
   position: absolute;
+  /* border: solid 1px red; */
+  right: 0;
 `;
 
 export const FourthSectionTitleStyle = styled.p`
   font-family: TBC Contractica CAPS Black;
   font-size: 48px;
   color: #261f63;
-  border-bottom: solid 5px #c2d7e2;
+  /* border-bottom: solid 5px #c2d7e2; */
   margin: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-image: linear-gradient(100deg, rgb(194,215,226), transparent) 1;
 
   @media screen and (max-width: 800px) {
     font-size: 36px;
@@ -777,9 +782,11 @@ export const FourthSectionImgDivStyle = styled.div`
   }
 `;
 
-// export const FourthSectionImgStyle = styled.img`
-//   width: 100%;
-//   border: solid 1px purple;
-//   position: absolute;
-//   left: 0px;
-// `;
+export const FourthSectionImgStyle = styled.img`
+  height: 100%;
+  max-height: 80%;
+  /* border: solid 1px purple; */
+  position: absolute;
+  left: 0px;
+  /* max-height: 100%; */
+`;

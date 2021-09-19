@@ -53,6 +53,24 @@ body {
   background: #fece2f !important;
 }
 
+.section {
+  background-image: url('./img/Background-shapes-new.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: cover; */
+  /* border: solid 1px green; */
+}
+
+.background-shapes-img {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #fp-nav ul li,
 ul li {
   height: 50px !important;
@@ -82,20 +100,25 @@ ul li a.active span {
   font-family: Arial, sans-serif !important;
 }
 
+
 /* Slides */
 .slide {
   position: relative;
 }
 .fp-slidesNav.fp-bottom {
-  /* border: solid 1px black; */
   display: flex !important;
   justify-content: space-around;
   margin-bottom: 50px !important;
+  padding-top: 20px;
+}
+
+.fp-slidesNav.fp-bottom ul li a {
+  height: 20px !important;
 }
 
 .fp-controlArrow.fp-prev {
   /* border-width: 28.5px 25px 28.5px 0 !important; */
-  top: 90% !important;
+  top: 100% !important;
   left: 100px !important;
   width: 50px !important;
   height: 50px !important;
@@ -108,7 +131,7 @@ ul li a.active span {
 
 .fp-controlArrow.fp-next {
   /* border-width: 28.5px 0 28.5px 25px !important; */
-  top: 90% !important;
+  top: 100% !important;
   left: 200px !important;
   width: 50px !important;
   height: 50px !important;

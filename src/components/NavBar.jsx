@@ -89,7 +89,7 @@ const NavBar = (props) => {
               }
               to="/about-us"
             >
-              {t("ABOUT_US")}
+              {t("ABOUT_US_NAVLINK")}
             </NavLink>
           </NavbarNavlinkLiStyle>
         </NavbarNavlinkUlStyle>
@@ -150,7 +150,7 @@ const NavBar = (props) => {
           </NavbarNavlinkLiStyle>
           <NavbarNavlinkLiStyle>
             <NavLink className="navbar-navlink" to="/about-us">
-              {t("ABOUT_US")}
+              {t("ABOUT_US_NAVLINK")}
             </NavLink>
           </NavbarNavlinkLiStyle>
           <NavbarLangChangeResponsiveDivStyle>

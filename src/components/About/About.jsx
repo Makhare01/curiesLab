@@ -18,30 +18,22 @@ import {
 
 // Images
 import aboutUsImg from "../../img/about.png";
+import { useTranslation } from "react-i18next";
+
 
 const About = (props) => {
+  const { t } = useTranslation();
+
   return (
     <>
       <NavBar index={props.active}></NavBar>
       <AboutContainerStyle>
         <AboutTextDivStyle>
           <AboutUsTextSubDivStyle>
-            <AboutUsTitleStyle>ჩვენს შესახებ</AboutUsTitleStyle>
-            <AboutUsDescriptionStyle>
-              ჩვენ ვართ ორი დამწყები მეცნიერი მარიკა და ნინო, რომლებსაც გვსურს
-              ბავშვებს ისევე შეუყვარდეთ მეცნიერება როგორც ჩვენ. მთელი ბავშვობა
-              ვოცნებობდით მოგვესხა თეთრი ხალთები, ხელთამანებში თითები
-              შეგვეცურებინა და მეცნიერების ჯადოსნური სამყაროში შეგვებიჯებინა,
-              საოცარი, გამაოგნებელი და თვალწარმტაცი ექსპერიმენტები
-              ჩაგვეტარებინა, რომლებსაც ინტერნეტის საშუალებით კომპიუტერის ეკრანზე
-              ვუცქერდით, მაგრამ ეს ოცნება ვერ აგვიხდა, რადგან ჩვენს სკოლებს ამის
-              რესურსები არ ჰქონდა. დღემდე ბევრი ბავშვის თვალებში არ ანთებულა ის
-              სიხარულის ნაპერწკალი, რომლსაც პაწაწო ექსპერიმენტის ჩატარება
-              იწვევს, ამიტომაც გადვწყვიტეთ შეგვექმნა სამეცნიერო ყუთები, რომლებიც
-              ბავშვებს სახლშივე შეუქმნის ლაბორატორიას.
-            </AboutUsDescriptionStyle>
+            <AboutUsTitleStyle> {t("ABOUT_US")} </AboutUsTitleStyle>
+            <AboutUsDescriptionStyle> {t("ABOUT_US_DESCRIPTION")} </AboutUsDescriptionStyle>
             <AboutUsButtonStyle>
-              <AboutUsButtonLabelStyle>მეტის ნახვა</AboutUsButtonLabelStyle>
+              <AboutUsButtonLabelStyle> {t("ABOUT_US_BUTTON_LABEL")} </AboutUsButtonLabelStyle>
             </AboutUsButtonStyle>
           </AboutUsTextSubDivStyle>
         </AboutTextDivStyle>

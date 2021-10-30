@@ -29,6 +29,10 @@ export const BoxTitleStyle = styled.p`
   font-family: TBC Contractica CAPS Black;
   text-align: center;
   color: #261f63;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 `;
 
 export const BoxDescriptionStyle = styled.p`
@@ -39,6 +43,10 @@ export const BoxDescriptionStyle = styled.p`
   text-align: center;
   width: 80%;
   margin: auto;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
 
   color: #55636e;
 `;
@@ -90,7 +98,7 @@ export const BoxPriceLabelStyle = styled.label`
   font-size: 14px;
   /* text-align: center; */
   position: absolute;
-  right: 6px;
+  right: 3px;
   top: 12px;
   /* border: solid 1px red; */
 

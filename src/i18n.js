@@ -5,6 +5,7 @@ const resources = {
   EN: {
     translation: {
       BOXES: "Boxes",
+      NEWS_NAVLINK: "News",
       TEAM: "Team",
       ABOUT_US_NAVLINK: "About Us",
       TRAVEL: "TRAVEL TO THE",
@@ -37,6 +38,7 @@ const resources = {
   GE: {
     translation: {
       BOXES: "ყუთები",
+      NEWS_NAVLINK: "სიახლეები",
       TEAM: "გუნდი",
       ABOUT_US_NAVLINK: "ჩვენს შესახებ",
       TRAVEL: "იმოგზაურე",

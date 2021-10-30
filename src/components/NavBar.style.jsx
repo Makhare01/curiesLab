@@ -149,7 +149,7 @@ export const NavbarLangChangeDivStyle = styled.div`
 
 export const NavbarLangChangeLabelStyle = styled.p`
   position: relative;
-  top: 3px;
+  top: 0px;
   font-size: 14px;
   font-family: TBC Contractica CAPS;
   cursor: pointer;

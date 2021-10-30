@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { NavLink } from "react-router-dom";
 import {
@@ -12,7 +13,7 @@ import {
   NavbarLangChangeLabelStyle,
   NavbarLangChangeResponsiveDivStyle,
 } from "./NavBar.style";
-import logo from "../img/clip-402.png";
+import logo from "../img/curies-lab-logo.png";
 
 import { useTranslation } from "react-i18next";
 
@@ -66,6 +67,18 @@ const NavBar = (props) => {
               to="/boxes"
             >
               {t("BOXES")}
+            </NavLink>
+          </NavbarNavlinkLiStyle>
+          <NavbarNavlinkLiStyle>
+            <NavLink
+              className={
+                props.index === 4
+                  ? "navbar-navlink navbar-active"
+                  : "navbar-navlink"
+              }
+              to="/news"
+            >
+              {t("NEWS_NAVLINK")}
             </NavLink>
           </NavbarNavlinkLiStyle>
           <NavbarNavlinkLiStyle>
@@ -141,6 +154,11 @@ const NavBar = (props) => {
           <NavbarNavlinkLiStyle>
             <NavLink className="navbar-navlink" to="/boxes">
               {t("BOXES")}
+            </NavLink>
+          </NavbarNavlinkLiStyle>
+          <NavbarNavlinkLiStyle>
+            <NavLink className="navbar-navlink" to="/boxes">
+              {t("NEWS_NAVLINK")}
             </NavLink>
           </NavbarNavlinkLiStyle>
           <NavbarNavlinkLiStyle>

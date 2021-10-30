@@ -35,12 +35,20 @@ const api = axios.create({
 //   }
 // );
 
+// const Boxes = (props) => {
+//   const [boxes, setBoxes] = useState();
+
+//   useEffect(() => {
+//     api.get("/api/boxes").then((res) => {
+//       setBoxes(res.data);
+//     });
+//   }, []);
+
 const Boxes = (props) => {
   const [boxes, setBoxes] = useState();
 
   useEffect(() => {
-    api.get("/api/boxes").then((res) => {
-      // console.log(res.data);
+    api.get("https://fakestoreapi.com/products").then((res) => {
       setBoxes(res.data);
     });
   }, []);

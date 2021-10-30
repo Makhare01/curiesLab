@@ -25,7 +25,7 @@ const Main = () => {
       </Route>
 
       <Route exact path="/news">
-        <NewsComponent />
+        <NewsComponent active={4} />
       </Route>
     </Switch>
   );

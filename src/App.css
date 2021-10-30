@@ -8,6 +8,12 @@
   src: url("./fonts/TBCContracticaCAPS-Bold.ttf");
 }
 
+@font-face {
+  font-family: TBC Contractica Regular;
+  src: url("./fonts/TBCContracticaCAPS-Regular.ttf");
+}
+
+
 * {
   user-select: none;
 }
@@ -59,6 +65,10 @@ body {
   background-position: center;
   /* background-size: cover; */
   /* border: solid 1px green; */
+}
+
+.section-fifth {
+  background-image: none;
 }
 
 .background-shapes-img {

@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "./NavBar";
 import ContactNavbar from "./ContactNavbar";
 import { MainPageContentDivStyle } from "./MainPageContentDiv.style";
+// @ts-ignore
 import ReactFullpage from "@fullpage/react-fullpage";
 import { NavLink } from "react-router-dom";
 import {
@@ -36,16 +37,40 @@ import {
   FourthSectionButtonStyle,
   FourthSectionButtonLabelStyle,
   FourthSectionImgDivStyle,
-  FourthSectionImgStyle
+  FourthSectionImgStyle,
+  // ---------------------------
+  FifthSectionDivStyle,
+  FifthSectionContentDivStyle,
+  FifthSectionContentTitleStyle,
+  FifthSectionContentSubDivStyle,
+  FifthSectionContentListStyle,
+  FifthSectionContentListItemLeftStyle
 } from "./Section.style";
 
+// @ts-ignore
 import FirstImg from "../img/first-section-img.png";
+// @ts-ignore
 import SecondImg from "../img/taxi-science.png";
+// @ts-ignore
 import ThirdSupportImg from "../img/help.png";
+// @ts-ignore
 import NewsImage from "../img/news.png"
+// @ts-ignore
 import bgImage from "../img/Background-shapes-grey.svg"
-import NewsCarousel from "./News/NewsCarousel";
+// @ts-ignore
+import BubbleImg from "../img/Bubble.png"
+// @ts-ignore
+import BouncedImg from "../img/chemistry.png"
+// @ts-ignore
+import BoxBouncedImg from "../img/purr-box.png"
+// @ts-ignore
+import FlaskImg from "../img/flask.png"
+// @ts-ignore
+import AtomImg from "../img/atom.png"
+// import NewsCarousel from "./News/NewsCarousel";
 import { useTranslation } from "react-i18next";
+import NeedHelp from "./Help/NeedHelp"
+import Bounced from "./Animation/Bounced"
 
 // Swiper
 
@@ -56,6 +81,7 @@ const MainPageSwiper = () => {
   return (
     <>
       <NavBar></NavBar>
+      <NeedHelp />
       <ReactFullpage
         scrollingSpeed={1000}
         sectionsColor={["#D1EAEF", "#D1EAEF", "#D1EAEF"]}
@@ -68,8 +94,9 @@ const MainPageSwiper = () => {
         slidesNavigation={true}
         slidesNavPosition={"bottom"}
         verticalCentered={true}
+        // @ts-ignore
         render={({ state, fullpageApi }) => {
-          <img className="background-shapes-img" src={bgImage} />
+          <img alt="background shapes" className="background-shapes-img" src={bgImage} />
           return (
             <ReactFullpage.Wrapper>
               <div className="section section-one">
@@ -102,6 +129,7 @@ const MainPageSwiper = () => {
 
               <div className="section section-two">
                 {/* <img className="background-shapes-img" src={bgImage} /> */}
+                <Bounced text="ყუთებიიი" img1={BubbleImg} img2={BoxBouncedImg} leftPos={15} rightPos={null} bottomPos={70} topPos={null} />
                 <MainPageContentDivStyle>
                   <SecondSectionTextDivStyle>
                     <SecondSectionTextAnimationDivStyle className="section-text">
@@ -192,10 +220,30 @@ const MainPageSwiper = () => {
               </div>
 
               <div className="section section-fifth">
-                {/* <img className="background-shapes-img" src={bgImage} /> */}
                 <MainPageContentDivStyle>
                   {/* <NewsCarousel /> */}
-
+                  <Bounced text="Hello!" img1={BubbleImg} img2={BouncedImg} leftPos={10} rightPos={null} bottomPos={40} topPos={null} />
+                  <Bounced text="Thanks!" img1={BubbleImg} img2={FlaskImg} leftPos={null} rightPos={10} bottomPos={70} topPos={null} />
+                  <Bounced text="Athomm!" img1={BubbleImg} img2={AtomImg} leftPos={null} rightPos={20} bottomPos={10} topPos={null} />
+                  <FifthSectionDivStyle>
+                    <FifthSectionContentDivStyle>
+                      <FifthSectionContentTitleStyle>Thank you very much!</FifthSectionContentTitleStyle>
+                      <FifthSectionContentSubDivStyle>
+                        <FifthSectionContentListStyle>
+                          <FifthSectionContentListItemLeftStyle>How it works</FifthSectionContentListItemLeftStyle>
+                          <FifthSectionContentListItemLeftStyle>Cards</FifthSectionContentListItemLeftStyle>
+                          <FifthSectionContentListItemLeftStyle>News</FifthSectionContentListItemLeftStyle>
+                          <FifthSectionContentListItemLeftStyle>Team</FifthSectionContentListItemLeftStyle>
+                          <FifthSectionContentListItemLeftStyle>About us</FifthSectionContentListItemLeftStyle>
+                        </FifthSectionContentListStyle>
+                        <FifthSectionContentListStyle>
+                          <FifthSectionContentListItemLeftStyle>Boxes</FifthSectionContentListItemLeftStyle>
+                          <FifthSectionContentListItemLeftStyle>Contact</FifthSectionContentListItemLeftStyle>
+                          <FifthSectionContentListItemLeftStyle>Legal terms</FifthSectionContentListItemLeftStyle>
+                        </FifthSectionContentListStyle>
+                      </FifthSectionContentSubDivStyle>
+                    </FifthSectionContentDivStyle>
+                  </FifthSectionDivStyle>
                 </MainPageContentDivStyle>
               </div>
             </ReactFullpage.Wrapper>

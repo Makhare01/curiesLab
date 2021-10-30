@@ -674,7 +674,10 @@ export const FourthSectionTitleStyle = styled.p`
   margin: 0px;
   border-bottom-style: solid;
   border-bottom-width: 5px;
-  border-image: linear-gradient(100deg, rgb(194,215,226), transparent) 1;
+
+  @media screen and (min-width: 800px) {
+    border-image: linear-gradient(100deg, rgb(194,215,226), transparent) 1;
+  }
 
   @media screen and (max-width: 800px) {
     font-size: 36px;
@@ -682,7 +685,8 @@ export const FourthSectionTitleStyle = styled.p`
     text-align: center;
     margin: auto;
     margin-top: 30px;
-    display: none;
+    border-bottom: solid 5px #c2d7e2;;
+    /* display: none; */
   }
 `;
 
@@ -691,6 +695,10 @@ export const FourthSectionTextStyle = styled.p`
   font-size: 14px;
   color: #55636e;
   margin-top: 60px;
+
+  @media screen and (max-width: 800px)  {
+    text-align: center;
+  }
 `;
 
 export const FourthSectionButtonStyle = styled.button`
@@ -737,14 +745,14 @@ export const FourthSectionImgDivStyle = styled.div`
   display: flex;
   align-items: center;
 
-  /* @media screen and (max-width: 800px), screen and (max-height: 812px) {
+  @media screen and (max-width: 800px), screen and (max-height: 812px) {
     height: 90% !important;
     width: 100% !important;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     top: 0%;
     align-items: center;
     justify-content: center;
-  } */
+  }
 
   /* Ipad Pro */
   @media screen and (max-width: 1024px) {
@@ -787,6 +795,74 @@ export const FourthSectionImgStyle = styled.img`
   max-height: 80%;
   /* border: solid 1px purple; */
   position: absolute;
-  left: 0px;
   /* max-height: 100%; */
+
+  @media screen and (min-width: 800px) {
+    left: 0px;
+  }
+`;
+
+// Fifth Section ------------------------------------------------------------------------------------------------------
+
+export const FifthSectionDivStyle = styled.div`
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const FifthSectionContentDivStyle = styled.div`
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 400px;
+  position: relative;
+`;
+
+export const FifthSectionContentTitleStyle = styled.p`
+  font-size: 28px;
+  color: grey;
+  text-align: center;
+`;
+
+export const FifthSectionContentSubDivStyle = styled.div`
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media screen and (max-width: 800px)  {
+    flex-direction: column;
+  }
+`;
+
+export const FifthSectionContentListStyle = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
+
+export const FifthSectionContentListItemLeftStyle = styled.p`
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  color: #55636e;
+  text-align: left;
+  margin: 0;
+  padding: 0 20px;
+  cursor: pointer;
+
+  &:hover {
+    color: #222;
+  }
+
+  @media screen and (max-width: 800px)  {
+    text-align: center;
+  }
 `;

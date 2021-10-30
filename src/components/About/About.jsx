@@ -17,6 +17,7 @@ import {
 } from "./About.style";
 
 // Images
+// @ts-ignore
 import aboutUsImg from "../../img/about.png";
 import { useTranslation } from "react-i18next";
 
@@ -33,7 +34,9 @@ const About = (props) => {
             <AboutUsTitleStyle> {t("ABOUT_US")} </AboutUsTitleStyle>
             <AboutUsDescriptionStyle> {t("ABOUT_US_DESCRIPTION")} </AboutUsDescriptionStyle>
             <AboutUsButtonStyle>
-              <AboutUsButtonLabelStyle> {t("ABOUT_US_BUTTON_LABEL")} </AboutUsButtonLabelStyle>
+              <a href="https://www.facebook.com/curieslaboratory/" target="_blank" style={{ textDecoration: 'none' }} rel="noreferrer">
+                <AboutUsButtonLabelStyle> {t("ABOUT_US_BUTTON_LABEL")} </AboutUsButtonLabelStyle>
+              </a>
             </AboutUsButtonStyle>
           </AboutUsTextSubDivStyle>
         </AboutTextDivStyle>

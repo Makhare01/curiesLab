@@ -615,17 +615,17 @@ export const FourthSectionTextDivStyle = styled.div`
   height: 100%;
   width: 50%;
   position: absolute;
-  /* border: solid 1px purple; */
   left: 0px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 
   /* Ipad Pro */
   @media screen and (max-width: 1024px) {
     top: 50%;
     height: 50% !important;
     width: 100% !important;
+    justify-content: center;
   }
 
   /* Mobile Rotate */
@@ -662,8 +662,6 @@ export const FourthSectionTextAnimationDivStyle = styled.div`
   max-width: 500px;
   height: auto;
   position: absolute;
-  /* border: solid 1px red; */
-  right: 0;
 `;
 
 export const FourthSectionTitleStyle = styled.p`
@@ -679,7 +677,7 @@ export const FourthSectionTitleStyle = styled.p`
     border-image: linear-gradient(100deg, rgb(194,215,226), transparent) 1;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1024px) {
     font-size: 36px;
     width: auto;
     text-align: center;
@@ -696,7 +694,7 @@ export const FourthSectionTextStyle = styled.p`
   color: #55636e;
   margin-top: 60px;
 
-  @media screen and (max-width: 800px)  {
+  @media screen and (max-width: 1024px)  {
     text-align: center;
   }
 `;
@@ -717,7 +715,7 @@ export const FourthSectionButtonStyle = styled.button`
     background: #f33e00;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1024px) {
     display: block !important;
     margin: auto !important;
     margin-top: 0px !important;
@@ -744,15 +742,7 @@ export const FourthSectionImgDivStyle = styled.div`
   right: 0px;
   display: flex;
   align-items: center;
-
-  @media screen and (max-width: 800px), screen and (max-height: 812px) {
-    height: 90% !important;
-    width: 100% !important;
-    /* border: solid 1px black; */
-    top: 0%;
-    align-items: center;
-    justify-content: center;
-  }
+  justify-content: flex-start;
 
   /* Ipad Pro */
   @media screen and (max-width: 1024px) {
@@ -793,13 +783,7 @@ export const FourthSectionImgDivStyle = styled.div`
 export const FourthSectionImgStyle = styled.img`
   height: 100%;
   max-height: 80%;
-  /* border: solid 1px purple; */
   position: absolute;
-  /* max-height: 100%; */
-
-  @media screen and (min-width: 800px) {
-    left: 0px;
-  }
 `;
 
 // Fifth Section ------------------------------------------------------------------------------------------------------
